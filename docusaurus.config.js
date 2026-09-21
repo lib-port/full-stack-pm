@@ -65,15 +65,16 @@ const config = {
       navbar: {
         title: 'Full-Stack Product Manager',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Site Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo-dark.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Book',
           },
           {
             href: repositoryUrl,
@@ -84,43 +85,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Introduction',
-                to: '/docs/introduction-ai-augmented-product-manager',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: repositoryUrl,
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} lib-port. Built with Docusaurus.`,
       },
       prism: {
