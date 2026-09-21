@@ -6,7 +6,7 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-const repositoryUrl = 'https://github.com/lib-port/prod-judge';
+const repositoryUrl = 'https://github.com/lib-port/full-stack-pm';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -22,9 +22,9 @@ const config = {
   },
 
   url: 'https://lib-port.github.io',
-  baseUrl: '/prod-judge/',
+  baseUrl: '/full-stack-pm/',
   organizationName: 'lib-port',
-  projectName: 'prod-judge',
+  projectName: 'full-stack-pm',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
