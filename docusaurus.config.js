@@ -14,7 +14,7 @@ const repositoryUrl = 'https://github.com/lib-port/full-stack-pm';
 const config = {
   title: 'Full-Stack Product Manager',
   tagline: 'Decide, Design, and Deliver with AI',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
