@@ -4,76 +4,76 @@
 
 Cedar is a fictional software product that helps repair businesses schedule visits, assign technicians, and keep job records. Consider a plumbing company that uses it.
 
-The company's dispatcher—the office employee who organizes repair visits—changes a homeowner's appointment from 10 a.m. to 2 p.m. She saves the new time in Cedar and calls the homeowner, who agrees to the change.
+The company's dispatcher, who organizes repair visits, moves a homeowner's appointment from 10 a.m. to 2 p.m. She saves the new time in Cedar and calls the homeowner, who agrees to the change.
 
-The company's plumber has already left the office with a printed schedule for the day. His copy still lists the appointment at 10 a.m., and he does not receive the revised time. When he arrives, the homeowner is out, having arranged to return for the afternoon appointment. The plumber cannot carry out the repair and calls the office for instructions.
+The plumber has already left the office with a printed schedule for the day. His printout still shows 10 a.m., and he receives no revised time. When he arrives, the homeowner is out, having arranged to return for the afternoon appointment. The plumber cannot carry out the repair and calls the office for instructions.
 
-Cedar's scheduling screen shows the time agreed with the homeowner. Yet the company has failed to get the plumber and homeowner to the same place at the same time.
+Cedar holds the time agreed with the homeowner, but the plumber is working from different information. The company has failed to get them to the same place at the same time.
 
-To investigate, Cedar's product team needs to establish how appointment changes reach plumbers who are already working away from the office. Does Cedar send an update? Are office staff expected to call? How does the dispatcher know whether the plumber has received the change? Those answers would help the team decide whether to change the software, the company's working procedures, or both.
+Cedar's product team needs to find out how appointment changes reach plumbers who are already away from the office. Does Cedar send them an update? Are office staff expected to call? How does the dispatcher know whether the plumber has received the change? The answers would help the team decide whether the software, the company's procedures, or both need to change.
 
-The scheduling screen is one part of Cedar. Understanding whether the product helps a business manage appointments also requires examining how people use its information to organize their work. A list of scheduling features would describe available functions, but would leave the team's immediate question unanswered: how should everyone involved learn and act on the revised appointment?
+The scheduling screen is one part of Cedar. To assess whether the product helps a business coordinate visits, the team must also examine how people obtain and use scheduling information. A feature list describes the software's functions. It does not answer the immediate question: how should everyone involved learn about a revised appointment and act on it?
 
 ## A product changes an existing arrangement
 
-For this book, a **product** is an intentionally maintained means of creating outcomes for some group under constraints. This is a practical lens: identify the people an offering serves, what it is intended to help them achieve, and the conditions under which it must work. Maintaining a product means making deliberate decisions about its continued usefulness, including when to change or withdraw it. It does not promise success or support forever.
+For this book, a **product** is an offering deliberately maintained to help a particular group achieve outcomes under constraints. This definition gives you three questions to ask: whom does the offering serve, what should it help them achieve, and what conditions must it work within? Maintaining a product means making deliberate decisions about its continued usefulness, including when to change or withdraw it. It does not guarantee success or indefinite support.
 
-Cedar enters an arrangement of office work, travel, repair work, and agreements with homeowners. Its scheduling record gives the dispatcher somewhere to save the revised time. Whether that record helps coordinate a visit depends on how the people doing the work obtain and act on the information.
+Cedar becomes part of an existing arrangement of office work, travel, repairs, and agreements with homeowners. It gives the dispatcher a place to record an appointment change. Whether that record helps coordinate a visit depends on how the people doing the work obtain and act on the information.
 
-We can examine those interacting elements together as a **system**. People and procedures can be elements alongside software; NASA's systems engineering handbook explicitly includes them in its account.[^1] Cedar itself also has interacting parts: its scheduling screen and saved appointment records need to work together. Looking at the product as a system helps us ask about those relationships. Looking at Cedar within the plumbing company's work reveals relationships that cross the software's edges.
+We can examine these people, procedures, and software together as a **system** of interacting elements. NASA's systems engineering handbook explicitly includes people and procedures in its account of a system.[^1] Cedar is also a system: its scheduling screen and stored appointment records must work together. Examining the software as a system reveals relationships between its parts. Examining it within the plumbing company's work reveals relationships beyond the software.
 
-Introducing or changing a product is an **intervention**: a deliberate change to an existing arrangement, intended to affect what happens. The intended outcome here is a coordinated visit that allows the repair to proceed. An outcome is a change in behavior, circumstances, or operating results; calling it an outcome does not establish its cause.
+Introducing or changing a product is an **intervention**: a deliberate change to an existing arrangement, intended to affect what happens. Here, the intended outcome is a coordinated visit that allows the repair to proceed. An **outcome** is a change in behavior, circumstances, or operating results. Identifying an outcome does not, by itself, establish what caused it.
 
-Constraints limit feasible or acceptable choices. Staff time, access to information, and authority to change working procedures are conditions to investigate, not explanations already established for this incident. A proposed calling procedure would need someone able and authorized to carry it out. Before choosing such a change, the team must decide which people and activities its investigation needs to include.
+Constraints limit which choices are feasible or acceptable. The team should investigate available staff time, access to information, and authority to change procedures. These are possible constraints on a solution; none is an established explanation for the missed visit. A proposed calling procedure, for example, would need someone able and authorized to carry it out. Before choosing a change, the team must decide whose work and which activities to include in its investigation.
 
 ## Choose the boundary for the decision
 
-A **product boundary** is the scope treated as the product for a particular decision, including an account of relevant dependencies outside it. Consider three questions about Cedar.
+A **product boundary** defines what you treat as part of the product for a particular decision. It should also identify relevant dependencies outside that scope. The appropriate boundary depends on the question. Consider three questions about Cedar.
 
-How clearly does Cedar show a changed appointment? Examine the editing interface and saved record. The screen shows 2 p.m.; that establishes the recorded time, but tells us nothing about whether the plumber learns it. This incident alone does not establish an interface defect.
+**How clearly does Cedar show an appointment change?** Examine the editing interface and saved record. The screen shows 2 p.m., which establishes the recorded time. It does not establish whether the plumber learns about the change. The missed visit alone does not establish that the interface is defective.
 
-How should revised times reach plumbers already away from the office? Include Cedar's scheduling behavior, the company's dispatch work, and the homeowner agreement. Ask what information is sent, who is responsible for contacting the plumber, and how the dispatcher can establish receipt. This boundary exposes the missing transfer. It is the useful starting scope for choosing between software changes, procedural changes, or both. Investigating it requires the company's participation.
+**How should revised times reach plumbers who are already away from the office?** Include Cedar's scheduling behavior, the company's dispatch work, and its agreement with the homeowner. Ask what information is sent, who should contact the plumber, and how the dispatcher can establish receipt. This scope directs attention to the gap between the saved record and the plumber's working schedule. It provides a useful starting point for investigating whether to change software, procedures, or both. The plumbing company must participate because the investigation includes its working practices.
 
-What should Cedar support across the business's work? Widen the view to jobs, billing, and help. Suppose the company uses external accounting and payment services, and Cedar staff provide product support. The map now includes these relationships:
+**What should Cedar support across the company's work?** Widen the investigation to include jobs, billing, and product support. For this broader view, suppose the company uses external accounting and payment services, receives help from Cedar's support staff, and pays subscription and usage charges for Cedar. The following map combines the missed-visit facts with these additional hypothetical relationships.
 
 | People or components | Information or exchange | Question to investigate |
 | --- | --- | --- |
-| Dispatcher and Cedar scheduling record | Saves 2 p.m. | What happens after saving? |
-| Dispatcher and homeowner | Agree to 2 p.m. by phone | How is that agreement available to staff? |
-| Plumber and working schedule | Printout still says 10 a.m. | How should revised information reach him? |
+| Dispatcher and Cedar scheduling record | Dispatcher saves 2 p.m. | What happens after the new time is saved? |
+| Dispatcher and homeowner | Agree to 2 p.m. by phone | How can other staff learn about that agreement? |
+| Plumber and printed schedule | Printout still shows 10 a.m. | How should the revised time reach the plumber? |
 | Cedar software and job data | Appointment, job, invoice, and payment records | Which activities need which information? |
 | Company office and external accounting service | Financial information about jobs, invoices, and payments | Who keeps the records consistent? |
-| Homeowner, company, and payment service | Payment for repair work | Who handles payment questions? |
-| Company employees and Cedar support | Questions about using Cedar | What information does support need? |
-| Plumbing company and Cedar's business | Subscription and usage charges for Cedar | What access and help does the purchase cover? |
+| Homeowner, plumbing company, and payment service | Payment for repair work | Who handles questions about repair payments? |
+| Company employees and Cedar support | Questions about using Cedar | What information does support need to help? |
+| Plumbing company and Cedar's provider | Subscription and usage charges for Cedar | What access and support do those charges cover? |
 
-The homeowner's repair payment and the company's Cedar charges are separate exchanges. The map does not imply that the failed visit generated a payment. Accounting and support belong in this broader investigation; their presence supplies no explanation for the missed visit.
+The homeowner's payment for repairs and the company's payment for Cedar are separate exchanges. Nothing in the incident description establishes that the homeowner paid for the failed visit. Accounting and support matter to the broader investigation, but their inclusion does not explain the missed visit.
 
-Smaller scopes also have uses. Focus on the mobile app to consider information available away from the office, the underlying software service to examine saving records, or the support operation to improve help. An **API**, a defined way for programs to request data or actions from one another, can be the product focus when deciding how other software connects. When the decision concerns the complete service experience, follow the homeowner from agreeing a time through the visit.
+Narrower boundaries also have uses. Focus on the mobile app when examining information available away from the office, the underlying software service when examining how records are saved, or the support operation when improving help. An **application programming interface (API)** defines how programs request data or actions from one another. It can be the product under consideration when deciding how other software connects. For a decision about the homeowner's service experience, follow the homeowner from agreeing a time through the visit.
 
-Widen a boundary when a relevant dependency is hidden; narrow it when extra detail cannot inform the decision. UK government service guidance likewise advises against scopes that are too broad or too narrow.[^2] Cedar's team can influence coordination without directing the plumbing company's employees or controlling external providers. A wider analysis does not enlarge its contractual obligations. These overlapping views also help explain the different labels applied to an offering.
+Widen the boundary when it hides a dependency that could affect the decision. Narrow it when additional detail would not help you decide. UK government service guidance similarly advises against scopes that are too broad or too narrow.[^2] Cedar's team may be able to improve coordination, but it does not direct the plumbing company's employees or control external providers. A broader investigation does not, by itself, expand the Cedar provider's contractual obligations. The scope of analysis and the authority to make changes are separate matters.
 
 ## Several ways to describe the same offering
 
-Suppose Cedar's product team commissions a finite piece of work to change appointment editing. That is a **project**: a bounded undertaking to create or change something. The Project Management Institute similarly defines a project as a temporary undertaking producing a particular product, service, or result.[^3] Completing that work leaves questions about operating and supporting the changed offering. A project can deliver a product or change an existing one; the terms identify different responsibilities.
+Suppose Cedar's product team commissions a finite piece of work to change appointment editing. That work is a **project**: a temporary undertaking to create or change something. The Project Management Institute similarly defines a project as a temporary undertaking that produces a particular product, service, or result.[^3] Once the project ends, decisions about operating and supporting the changed offering remain. A project can create a product or change an existing one; responsibility for the product extends beyond that project.
 
-The plumbing company provides a **service**: work performed for or with someone to meet a need. The repair is its service to the homeowner. That service can also be considered a product when the company deliberately maintains an offering, decides whom it serves, and sets conditions for providing it. Calling something a product does not exclude human work.
+The plumbing company provides a **service**: work performed for or with someone to meet a need. Its repair work is a service to the homeowner. That service can also be considered a product when the company deliberately maintains the offering, decides whom it serves, and sets the conditions for providing it. A product can include human work.
 
-A **platform** is an arrangement others use as a basis for activities or offerings. Cedar is a technical platform in the sense that its shared software capabilities support scheduling, job records, and billing. A marketplace platform connects participant groups, such as buyers and sellers. That description would direct attention to how those groups find and deal with each other. Cedar's role in this example does not establish a marketplace.
+A **platform** provides a basis on which others carry out activities or build offerings. Cedar is a technical platform because its shared software capabilities support scheduling, job records, and billing. A marketplace platform connects participant groups, such as buyers and sellers. When examining a marketplace, you need to understand how those groups find and deal with one another. Cedar's role in this example does not establish that it is a marketplace.
 
-Editing an appointment time is a **feature**, a particular characteristic or function of an offering. A **capability** is something a person, organization, or system can do. Coordinating a revised visit requires software functions and human activities to work together. Delivering the editing feature does not establish that capability in practice.
+Editing an appointment time is a **feature**: a particular characteristic or function of an offering. A **capability** is something a person, organization, or system can do. The capability to coordinate a revised visit depends on software functions and human activities working together. Delivering the editing feature does not establish that people can coordinate the visit in practice.
 
-The same lens applies beyond sold software. An employee inventory tool can be a product maintained for staff without being sold separately. A physical drill can be considered with instructions, compatible consumables, repair arrangements, and disposal decisions when those affect its use. Neither example requires a subscription. Choose the description that clarifies the responsibility at issue: maintaining the tool, providing a lending service, or completing a project to introduce either. Those responsibilities continue to matter after initial delivery.
+These distinctions apply beyond software sold to customers. An employee inventory tool can be a product maintained for staff without being sold separately. For a physical drill, a useful product boundary may include instructions, compatible consumables, repair arrangements, and disposal decisions when these affect its use. Neither example requires a subscription. Choose the description that clarifies the responsibility you are examining: maintaining a tool, providing a tool-lending service, or completing a project to introduce either offering.
 
 ## Responsibility continues through time
 
-When a business considers buying Cedar, it needs to understand what the offering supports and what work its own employees must do. Cedar's team must decide how to explain those expectations and help a new customer begin using the product. Acquisition and introduction belong in product decisions alongside the daily scheduling screen.
+Before buying Cedar, a business needs to understand what the software supports and what its employees must do themselves. Cedar's team needs to decide how to explain those expectations and help new customers begin using the product. Decisions about how businesses acquire and begin using Cedar belong alongside decisions about its everyday scheduling functions.
 
-Once staff rely on Cedar, the provider must operate the software and arrange help when employees have questions. Changes require attention to existing work: if appointment editing changes, what should dispatchers and support staff learn? Maintenance includes keeping functions and information usable as needs and surrounding services change. UK government service guidance makes a related point: teams should work with operational colleagues to understand effects between online and offline activity.[^4]
+Once employees rely on Cedar, its provider must operate the software and arrange help when they have questions. Changes must take account of existing work. If appointment editing changes, for example, what do dispatchers and support staff need to learn? Maintenance includes keeping functions and information usable as needs and surrounding services change. UK government service guidance makes a related point: teams should work with operational colleagues to understand how online and offline activities affect one another.[^4]
 
-Eventually a company may leave Cedar, or Cedar's provider may withdraw an offering. Decisions then include how the company can retrieve needed job records and how outstanding appointments will be handled during transition. These are responsibilities to plan for, not a promise of indefinite support or a compulsory sequence through which every product passes once.
+A company may eventually stop using Cedar, or Cedar's provider may withdraw an offering. The transition requires decisions about how the company will retrieve needed job records and handle outstanding appointments. Product responsibility includes planning for these transitions without promising indefinite support. The activities described here need not occur in a fixed sequence or only once.
 
-The questions indicate whom to involve. Ask an engineer about notification behavior, the plumbing company's operations manager about calling responsibilities, and accounting or payment specialists about financial information. Cedar support colleagues can explain what they need to help employees. Product responsibility includes recognizing when a decision requires their knowledge and authority. An external AI assistant can help organize such questions, provided it receives enough context to understand the investigation.
+The decision determines whom to involve. An engineer can explain notification behavior; the plumbing company's operations manager can clarify who should make calls. Accounting or payment specialists can advise on financial information, and Cedar's support staff can explain what they need to help users. Product responsibility includes recognizing when a decision requires another person's knowledge or authority. An external AI assistant can help organize the questions if it receives enough context about the investigation.
 
 ## Give AI the people, situation, and question
 
@@ -81,32 +81,42 @@ Consider asking an assistant:
 
 > How should we improve Cedar's scheduling software?
 
-The prompt omits the failed visit, the plumber's old information, the homeowner's agreement, and the company's procedures. It also invites improvements before establishing what needs changing. Give the assistant a bounded investigation instead:
+This prompt omits the missed visit, the plumber's outdated schedule, the homeowner's agreement, and the company's procedures. It invites solutions before establishing what needs to change.
 
-> A plumbing company uses Cedar. Its dispatcher changes a visit from 10 a.m. to 2 p.m., saves the time, and calls the homeowner, who agrees. The plumber has left with a printout showing 10 a.m. He receives no revised time, arrives while the homeowner is out, and calls the office. We need to decide whether software, working procedures, or both need changing. Treat coordination of the revised visit as the scope. Return three rows: actor or information transfer; known fact; unanswered question; check that could inform the decision. Keep notification behavior and cause unknown. Do not invent interviews, metrics, faults, or a proven remedy.
+Cedar already provides mobile access for technicians and notification features. This example leaves the recipients and triggers of those notifications unspecified. The existence of these features does not establish whether a revised appointment reaches the plumber. Include the known capabilities and the uncertainty in a more focused request:
 
-For comparison, consider author-constructed responses, not results from a model test. “Add a mobile alert” could answer the weak prompt, but leaves the missing behavior unspecified. Cedar already has technician mobile access and customer notifications. A useful investigation response would instead contain a row like this:
+> A plumbing company uses Cedar. Its dispatcher changes an appointment from 10 a.m. to 2 p.m., saves the new time, and calls the homeowner, who agrees. The plumber has already left with a printout showing 10 a.m. He receives no revised time, arrives while the homeowner is out, and calls the office. Cedar provides mobile access for technicians and notification features, but the recipients and triggers of those notifications are unspecified here. We need to decide whether the software, the company's procedures, or both need changing. Limit the investigation to coordinating this revised visit. Return a table with three data rows and four columns: person or information transfer; known fact; unanswered question; check and how it could inform the decision. Treat Cedar's notification behavior and the reason the plumber received no revised time as unknown. Do not invent interviews, metrics, faults, or a proven remedy.
 
-| Transfer | Known fact | Question | Check and decision use |
+The author wrote the following responses as illustrations; they are not results from a model test. A response to the vague prompt might say, “Add a mobile alert.” That suggestion does not establish what Cedar currently does or whether another alert would address the problem. A response to the focused prompt could include this row:
+
+| Person or information transfer | Known fact | Unanswered question | Check and how it could inform the decision |
 | --- | --- | --- | --- |
-| Saved time to plumber's schedule | Screen: 2 p.m.; printout: 10 a.m. | How should updates reach someone already away? | Trace the update procedure with the dispatcher and an engineer to identify whether software changes need investigation. |
+| Revised time in Cedar to the plumber's working schedule | Cedar shows 2 p.m.; the printout shows 10 a.m. | How should updates reach a plumber who is already away from the office? | Trace the update procedure with the dispatcher and an engineer to establish whether software changes, procedural changes, or both need investigation. |
 
-Other rows could ask who should contact the plumber and what, if anything, shows receipt. Check every factual statement: “the printout says 10 a.m.” is supplied; “Cedar failed to send its automatic alert” is not. Recast the latter as “Was an alert expected or attempted?” In real work, inspect actual behavior or authorized records with relevant staff. A receipt indicator, if one exists, would still need interpretation; a click alone need not mean understanding. The stronger prompt defines a useful task, but its answer remains a proposal to check. Use fictional or appropriately approved information for your own exercise.
+The other rows could ask who should contact the plumber and what, if anything, records receipt. Check every factual statement against the information supplied. “The printout shows 10 a.m.” is a supplied fact. “Cedar failed to send its automatic alert” is an unsupported claim. Turn that claim into a question: “Was an alert expected or attempted?”
+
+In real work, inspect actual behavior or authorized records with the relevant staff. If a receipt indicator exists, establish what it means: a click alone may not show that the recipient understood the change. A focused prompt can produce a useful investigation plan, but the plan and its claims still need checking. Use fictional information or information approved for use with the assistant when trying this exercise yourself.
 
 ## Choose a boundary yourself
 
-In a fictional public library, a resident reserves a cordless drill for afternoon use. The website confirms the reservation. At collection, a lending assistant finds the battery empty and has no charged spare. The resident leaves without a usable drill. Why the reservation and equipment readiness differed is unknown.
+In a fictional public library, a resident reserves a cordless drill for afternoon use. The website confirms the reservation. When the resident arrives, a lending assistant finds that the battery is empty and no charged spare is available. The resident leaves without a usable drill. Why no usable drill was ready for collection is unknown.
 
-You are responsible for the reservation website; a lending manager directs equipment preparation and handover. Write a short analysis:
+You are responsible for the reservation website. A lending manager directs equipment preparation and handover. Write a short analysis:
 
-1. Name the resident's desired result and a website decision versus a lending-service decision.
-2. Justify a narrow website boundary and a broader boundary for making a usable drill available.
-3. For each boundary, identify an information transfer it exposes or omits. Name a dependency outside your control and an unknown.
-4. Propose a check before choosing a fix, and one responsibility after launch.
+1. State the result the resident wants. Identify one decision about the website and one about the lending service.
+2. Justify a narrow boundary for investigating the website and a broader boundary for investigating how to make a usable drill available.
+3. For each boundary, identify an information transfer it includes or leaves out, a dependency outside your control, and an unanswered question.
+4. Propose a check to make before choosing a fix, and identify one responsibility that continues after launch.
 
-A workable interpretation distinguishes confirmation from readiness. The website boundary lets you check how availability is recorded. That traces information into the confirmation but leaves equipment preparation outside the website team's authority. The lending-service boundary includes the assistant, staff inventory tool, drill, battery, and preparation work. You depend on the lending manager's preparation arrangements. Ask the lending manager whether readiness is recorded and whether that information reaches the website. Check how the website determines availability. Those checks could inform software changes, preparation procedures, or both; they do not establish a remedy. Keeping availability information usable remains necessary after launch. Retirement also requires handling existing reservations.
+One workable analysis begins by distinguishing a confirmed reservation from equipment that is ready to use. The resident wants a usable drill for the afternoon. A website decision concerns how availability is determined and displayed. A lending-service decision concerns how equipment is prepared for collection.
 
-Value is an improvement that matters to a specified person or group, assessed against an alternative and alongside costs and harms. With a useful boundary chosen, ask which improvement matters to whom, compared with what alternative and at what cost.
+The narrow website boundary lets you trace how availability information becomes a reservation confirmation. Physical preparation falls outside this boundary and remains under the lending manager's control. The resident's ability to use the drill still depends on that preparation. You do not yet know how the website determines availability or whether it receives a record of equipment readiness.
+
+The broader lending-service boundary includes the lending assistant, staff inventory tool, drill, battery, and preparation work. It brings equipment readiness, the reservation, and collection into the same investigation. You still depend on the lending manager's preparation arrangements: widening the investigation does not give you authority over that work. Ask the manager whether readiness is recorded and whether that information reaches the website. Check how the website determines availability.
+
+These checks could inform software changes, preparation procedures, or both. They do not establish a remedy in advance. After launch, keeping availability information usable remains a responsibility. If the website or lending service is retired, existing reservations must also be addressed.
+
+**Value** is an improvement that matters to a specified person or group, assessed against an alternative and alongside costs and harms. Once you have chosen a useful boundary, ask which improvement matters, to whom, compared with what alternative, and at what cost.
 
 ## Notes
 
