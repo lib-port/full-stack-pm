@@ -7,21 +7,23 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 
 const repositoryUrl = 'https://github.com/lib-port/full-stack-pm';
+const siteUrl = process.env.DOCUSAURUS_SITE_URL || 'https://lib-port.github.io';
+const baseUrl = process.env.DOCUSAURUS_BASE_URL || '/full-stack-pm/';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Full-Stack Product Manager',
-  tagline: 'Decide, Design, and Deliver with AI',
+  tagline: 'Product judgment for an AI-augmented world',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: 'https://lib-port.github.io',
-  baseUrl: '/full-stack-pm/',
+  url: siteUrl,
+  baseUrl,
   organizationName: 'lib-port',
   projectName: 'full-stack-pm',
   trailingSlash: false,
@@ -42,6 +44,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl: `${repositoryUrl}/tree/main/`,
         },
@@ -56,15 +59,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/og.png',
       colorMode: {
         respectPrefersColorScheme: true,
       },
       navbar: {
         title: 'Full-Stack Product Manager',
         logo: {
-          alt: 'Site Logo',
+          alt: 'Full-Stack Product Manager',
           src: 'img/logo.svg',
           srcDark: 'img/logo-dark.svg',
         },
@@ -84,7 +86,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} lib-port. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} lib-port. Full-Stack Product Manager is a work in progress.`,
       },
       prism: {
         theme: prismThemes.github,

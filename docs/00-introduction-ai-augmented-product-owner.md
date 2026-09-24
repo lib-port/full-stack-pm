@@ -2,7 +2,7 @@
 
 ## Answers are easier to produce
 
-AI assistants make specialized information and analysis easier to obtain through everyday language. They can explain unfamiliar ideas, summarize material, draft analyses, suggest alternatives, write code, and model a problem or its costs. You can begin by examining a proposed answer instead of creating every part of it yourself. For some tasks, this reduces the time needed to prepare material. Validating the proposal, implementing it, and operating the resulting service still require separate work.
+AI assistants make specialised information and analysis easier to access through non-expert inquiries. They can explain unfamiliar ideas, summarise material, draft analyses, suggest alternatives, write code, and model a problem or its costs. You can begin by examining an answer proposed by an AI assistant, instead of creating every part of the answer yourself first. For some tasks, this reduces the time needed to prepare material, though validating the proposal, implementing it, and operating the resulting service still require separate work.
 
 A 2023 experiment with management consultants illustrates the distinction. Participants using the tested AI assistant worked faster on selected product-innovation tasks and produced work that received higher quality ratings. On a different business-analysis task, however, AI-assisted participants were less likely to reach the correct recommendation.[^1] These findings apply to the tasks and system studied. They do not establish the cost or quality of your next product decision.
 
