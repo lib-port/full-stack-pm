@@ -82,10 +82,6 @@ function HomepageHeader() {
     <header className={styles.hero}>
       <div className={`container ${styles.heroGrid}`}>
         <div className={styles.heroCopy}>
-          <div className={styles.status}>
-            <span aria-hidden="true" />
-            The complete book
-          </div>
           <p className={styles.kicker}>Full-Stack Product Manager</p>
           <Heading as="h1">
             Build better product judgement in an AI-augmented world.
@@ -128,8 +124,8 @@ function Contents() {
         <div className={styles.sectionHeading}>
           <div>
             <p className={styles.sectionLabel}>Explore the book</p>
-            <Heading as="h2" id="contents" tabIndex={-1}>
-              The complete contents.
+            <Heading as="h2" id="title" tabIndex={-1}>
+              Full-Stack Product Manager
             </Heading>
           </div>
           <p>

@@ -86,7 +86,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} lib-port. Full-Stack Product Manager.`,
+        copyright: `Copyright © ${new Date().getFullYear()} lib-port. Built with Docusaurus and GitHub Pages.`,
       },
       prism: {
         theme: prismThemes.github,
