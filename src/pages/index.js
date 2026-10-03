@@ -10,7 +10,7 @@ const audiences = [
   'Product managers',
   'Founders',
   'Service leaders',
-  'New product owners',
+  'Business analysts',
 ];
 
 const disciplines = [
@@ -123,7 +123,7 @@ function Premise() {
             when another discipline needs to shape the decision.
           </p>
           <blockquote>
-            <p>More answers create more to assess—not less responsibility.</p>
+            <p>More answers create more to assess, but not less responsibility.</p>
           </blockquote>
         </div>
       </div>
@@ -153,7 +153,7 @@ function LearningApproach() {
           <div>
             <p className={styles.sectionLabel}>A practical learning model</p>
             <Heading as="h2" id="approach-heading">
-              Build breadth. Go deeper when the decision demands it.
+              Build breadth, then go deeper when the decision demands it.
             </Heading>
           </div>
           <p>
@@ -207,7 +207,7 @@ function Coverage() {
             reference when a decision exposes a gap in your understanding.
           </p>
           <div className={styles.lifecycle}>
-            <p>From first question to final retirement</p>
+            <p>From first prototype to final product</p>
             <div className={styles.lifecycleSteps} aria-label="Product lifecycle">
               <span>Discover</span>
               <span>Design</span>
