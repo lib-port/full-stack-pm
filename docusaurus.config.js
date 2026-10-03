@@ -15,7 +15,7 @@ const baseUrl = process.env.DOCUSAURUS_BASE_URL || '/full-stack-pm/';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Full-Stack Product Manager',
-  tagline: 'Product judgment for an AI-augmented world',
+  tagline: 'Product judgement for an AI-augmented world',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -86,7 +86,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} lib-port. Full-Stack Product Manager is a work in progress.`,
+        copyright: `Copyright © ${new Date().getFullYear()} lib-port. Full-Stack Product Manager.`,
       },
       prism: {
         theme: prismThemes.github,
