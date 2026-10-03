@@ -124,7 +124,7 @@ function Contents() {
         <div className={styles.sectionHeading}>
           <div>
             <p className={styles.sectionLabel}>Explore the book</p>
-            <Heading as="h2" id="title" tabIndex={-1}>
+            <Heading as="h2" id="contents" tabIndex={-1}>
               Full-Stack Product Manager
             </Heading>
           </div>
