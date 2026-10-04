@@ -118,6 +118,8 @@ function AudienceBar() {
 }
 
 function Contents() {
+  let nextChapter = 1;
+
   return (
     <section className={styles.contentsSection} aria-labelledby="contents">
       <div className="container">
@@ -140,9 +142,10 @@ function Contents() {
           </Link>
           <ol className={styles.parts}>
             {parts.map((part) => {
-              const [number, title] = part.label.split(' — ');
-              const firstChapter = Number(part.items[0].split('-')[1]);
-              const lastChapter = Number(part.items.at(-1).split('-')[1]);
+              const [number, title] = part.label.split(/ [—-] /);
+              const firstChapter = nextChapter;
+              const lastChapter = firstChapter + part.items.length - 1;
+              nextChapter = lastChapter + 1;
 
               return (
                 <li key={part.label}>
@@ -178,7 +181,7 @@ function LearningOutcomes() {
           <div>
             <p className={styles.sectionLabel}>What you’ll learn</p>
             <Heading as="h2" id="learning-heading">
-              Bring better questions to real product decisions.
+              Ask better questions about real product decisions.
             </Heading>
           </div>
           <p>
@@ -203,8 +206,7 @@ function LearningOutcomes() {
             Cedar is an operations product for field-service businesses such as
             plumbing and maintenance companies. Its scheduling, dispatch and
             payment decisions connect the book’s ideas through practical
-            situations, from discovering opportunities to operating a product
-            and deciding what to stop.
+            situations, from discovering opportunities to operating a product.
           </p>
         </aside>
       </div>
@@ -224,8 +226,7 @@ function ReadingGuide() {
             </Heading>
           </div>
           <p>
-            You do not need prior training in programming, statistics or
-            economics. Keep one real decision in mind as you read.
+            Read the chapters sequentially as a guide or use specific chapters as a reference.
           </p>
         </div>
         <div className={styles.readingRoutes}>

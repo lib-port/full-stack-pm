@@ -2,6 +2,12 @@
 
 Full-Stack Product Manager is a practical guide to connecting people, economics, markets, technology and AI to make better product decisions.
 
+[![Docusaurus site](https://img.shields.io/badge/Docusaurus-latest-3ECC5F?logo=docusaurus&logoColor=white)](https://docusaurus.io/docs)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-hosting-222222)](https://pages.github.com/)
+[![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript TSX](https://img.shields.io/badge/TypeScript-TSX-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js 24](https://img.shields.io/badge/Node.js-24-5FA04E?logo=nodedotjs&logoColor=white)](https://nodejs.org/en)
+
 **[Read the book](https://lib-port.github.io/full-stack-pm/)** · [Start with the introduction](https://lib-port.github.io/full-stack-pm/introduction-ai-powered-product-manager) · [Browse the contents](https://lib-port.github.io/full-stack-pm/#contents)
 
 This repository contains the book’s Markdown source and the Docusaurus site that publishes it. The book explores how to frame problems, weigh evidence, understand technical constraints and work with specialists while keeping product decisions accountable.

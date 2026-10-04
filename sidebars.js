@@ -6,7 +6,7 @@ const sidebars = {
     "introduction-ai-powered-product-manager",
     {
       "type": "category",
-      "label": "I — Foundations of Product Judgement",
+      "label": "I - Foundations of Product Judgement",
       "collapsed": true,
       "items": [
         "what-is-a-product",
@@ -18,7 +18,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "II — Understanding People and Experience",
+      "label": "II - Understanding People and Experience",
       "collapsed": true,
       "items": [
         "humans-are-not-rational-interfaces",
@@ -30,7 +30,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "III — Understanding Value, Markets, and Growth",
+      "label": "III - Understanding Value, Markets, and Growth",
       "collapsed": true,
       "items": [
         "economic-thinking-for-product-decisions",
@@ -43,7 +43,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "IV — Understanding Software and Engineered Systems",
+      "label": "IV - Understanding Software and Engineered Systems",
       "collapsed": true,
       "items": [
         "how-software-works",
@@ -57,7 +57,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "V — Evidence, Uncertainty, and Decisions",
+      "label": "V - Evidence, Uncertainty, and Decisions",
       "collapsed": true,
       "items": [
         "making-decisions-under-uncertainty",
@@ -69,7 +69,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "VI — Working Effectively With AI",
+      "label": "VI - Working Effectively With AI",
       "collapsed": true,
       "items": [
         "what-ai-can-and-cannot-do",
@@ -82,7 +82,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "VII — Integrated Product Practice",
+      "label": "VII - Integrated Product Practice",
       "collapsed": true,
       "items": [
         "discovering-opportunities",
@@ -96,7 +96,7 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "VIII — Becoming a Rapid Specialist",
+      "label": "VIII - Becoming a Rapid Specialist",
       "collapsed": true,
       "items": [
         "entering-an-unfamiliar-domain",
