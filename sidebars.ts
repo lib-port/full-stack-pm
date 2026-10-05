@@ -1,6 +1,5 @@
-// @ts-check
+import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
     "introduction-ai-powered-product-manager",
@@ -107,6 +106,6 @@ const sidebars = {
     },
     "conclusion-product-judgment"
   ]
-};
+} satisfies SidebarsConfig;
 
 export default sidebars;

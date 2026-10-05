@@ -1,3 +1,4 @@
+import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
@@ -5,9 +6,14 @@ import sidebars from '@site/sidebars';
 import styles from './index.module.css';
 
 const book = sidebars.tutorialSidebar;
+type BookPart = Extract<(typeof book)[number], {type: 'category'}>;
+
 const introductionPath = `/${book[0]}`;
 const conclusionPath = `/${book.at(-1)}`;
-const parts = book.filter((item) => item.type === 'category');
+const parts = book.filter(
+  (item): item is BookPart =>
+    typeof item === 'object' && item.type === 'category',
+);
 const chapterCount = parts.reduce((total, part) => total + part.items.length, 0);
 
 const audiences = [
@@ -17,7 +23,7 @@ const audiences = [
   'Business analysts',
 ];
 
-const learningOutcomes = [
+const learningOutcomes: [title: string, description: string][] = [
   [
     'Frame the product problem',
     'Understand people’s needs, define useful product boundaries and recognise how a change affects the surrounding system.',
@@ -36,7 +42,7 @@ const learningOutcomes = [
   ],
 ];
 
-function ReadingActions() {
+function ReadingActions(): ReactNode {
   return (
     <div className={styles.actions}>
       <Link className={styles.primaryAction} to={introductionPath}>
@@ -50,7 +56,7 @@ function ReadingActions() {
   );
 }
 
-function LearningModel() {
+function LearningModel(): ReactNode {
   return (
     <aside className={styles.model} aria-label="The book's learning model">
       <p className={styles.modelEyebrow}>The accelerated generalist</p>
@@ -77,7 +83,7 @@ function LearningModel() {
   );
 }
 
-function HomepageHeader() {
+function HomepageHeader(): ReactNode {
   return (
     <header className={styles.hero}>
       <div className={`container ${styles.heroGrid}`}>
@@ -102,7 +108,7 @@ function HomepageHeader() {
   );
 }
 
-function AudienceBar() {
+function AudienceBar(): ReactNode {
   return (
     <section className={styles.audience} aria-labelledby="audience-heading">
       <div className={`container ${styles.audienceInner}`}>
@@ -117,7 +123,7 @@ function AudienceBar() {
   );
 }
 
-function Contents() {
+function Contents(): ReactNode {
   let nextChapter = 1;
 
   return (
@@ -173,7 +179,7 @@ function Contents() {
   );
 }
 
-function LearningOutcomes() {
+function LearningOutcomes(): ReactNode {
   return (
     <section className={styles.learningSection} aria-labelledby="learning-heading">
       <div className="container">
@@ -214,7 +220,7 @@ function LearningOutcomes() {
   );
 }
 
-function ReadingGuide() {
+function ReadingGuide(): ReactNode {
   return (
     <section className={styles.readingSection} aria-labelledby="reading-heading">
       <div className="container">
@@ -258,7 +264,7 @@ function ReadingGuide() {
   );
 }
 
-function FinalCallToAction() {
+function FinalCallToAction(): ReactNode {
   return (
     <section className={styles.finalSection} aria-labelledby="final-heading">
       <div className="container">
@@ -276,7 +282,7 @@ function FinalCallToAction() {
   );
 }
 
-export default function Home() {
+export default function Home(): ReactNode {
   return (
     <Layout
       wrapperClassName={styles.landingPage}

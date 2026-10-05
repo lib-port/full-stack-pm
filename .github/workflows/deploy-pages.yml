@@ -9,12 +9,13 @@ on:
       - .node-version
       - .npmrc
       - docs/**
-      - docusaurus.config.js
+      - docusaurus.config.ts
       - package.json
       - package-lock.json
-      - sidebars.js
+      - sidebars.ts
       - src/**
       - static/**
+      - tsconfig.json
   workflow_dispatch:
 
 permissions:
@@ -75,8 +76,13 @@ jobs:
             "@docusaurus/core@${DOCUSAURUS_VERSION}" \
             "@docusaurus/faster@${DOCUSAURUS_VERSION}" \
             "@docusaurus/preset-classic@${DOCUSAURUS_VERSION}" \
+            "@docusaurus/theme-common@${DOCUSAURUS_VERSION}" \
             "@docusaurus/types@${DOCUSAURUS_VERSION}" \
+            "@docusaurus/tsconfig@${DOCUSAURUS_VERSION}" \
             "@docusaurus/module-type-aliases@${DOCUSAURUS_VERSION}"
+
+      - name: Type-check site
+        run: npm run typecheck
 
       - name: Build site
         run: npm run build

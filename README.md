@@ -26,14 +26,14 @@ The book develops a learning model with three complementary capabilities:
 
 There are **45 chapters across eight parts**, plus an introduction and conclusion:
 
-- I — Foundations of Product Judgement
-- II — Understanding People and Experience
-- III — Understanding Value, Markets, and Growth
-- IV — Understanding Software and Engineered Systems
-- V — Evidence, Uncertainty, and Decisions
-- VI — Working Effectively With AI
-- VII — Integrated Product Practice
-- VIII — Becoming a Rapid Specialist
+- I - Foundations of Product Judgement
+- II - Understanding People and Experience
+- III - Understanding Value, Markets, and Growth
+- IV - Understanding Software and Engineered Systems
+- V - Evidence, Uncertainty, and Decisions
+- VI - Working Effectively With AI
+- VII - Integrated Product Practice
+- VIII - Becoming a Rapid Specialist
 
 Cedar, a fictional operations product for field-service businesses, connects the ideas through scheduling, dispatch, customer communication and payment decisions. Its examples make the reasoning concrete and show how one product decision crosses several disciplines.
 
@@ -54,11 +54,14 @@ npm ci
 npm start
 ```
 
-The development server previews the site at <http://localhost:3000/full-stack-pm/> and updates as you edit. Chapter order is defined in [sidebars.js](sidebars.js).
+The development server previews the site at <http://localhost:3000/full-stack-pm/> and updates as you edit. Chapter order is defined in [sidebars.ts](sidebars.ts).
+
+The site configuration, sidebar and React components are written in TypeScript. `npm run typecheck` checks them without emitting JavaScript.
 
 To build and preview the production site:
 
 ```sh
+npm run typecheck
 npm run build
 npm run serve
 ```
@@ -67,6 +70,6 @@ The build writes the static site to `build/`; the preview uses the same local UR
 
 ## Publishing
 
-The [GitHub Pages workflow](.github/workflows/deploy-pages.yml) builds and deploys pushes to `main` that change its listed site, dependency or workflow paths. A README-only push skips the build. The workflow can also be run manually from GitHub Actions.
+The [GitHub Pages workflow](.github/workflows/deploy-pages.yml) type-checks, builds and deploys pushes to `main` that change its listed site, dependency or workflow paths. Type errors prevent deployment. A README-only push skips the build. The workflow can also be run manually from GitHub Actions.
 
 CI resolves the latest Docusaurus release at build time, while local installation with `npm ci` uses the checked-in lockfile. This means local and published builds can use different Docusaurus versions.

@@ -1,0 +1,90 @@
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+const repositoryUrl = 'https://github.com/lib-port/full-stack-pm';
+const siteUrl = process.env.DOCUSAURUS_SITE_URL || 'https://lib-port.github.io';
+const baseUrl = process.env.DOCUSAURUS_BASE_URL || '/full-stack-pm/';
+
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+const config: Config = {
+  title: 'Full-Stack Product Manager',
+  tagline: 'Product judgement for an AI-augmented world',
+
+  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  future: {
+    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+  },
+
+  url: siteUrl,
+  baseUrl,
+  organizationName: 'lib-port',
+  projectName: 'full-stack-pm',
+  trailingSlash: false,
+
+  onBrokenLinks: 'throw',
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          routeBasePath: '/',
+          sidebarPath: './sidebars.ts',
+          editUrl: `${repositoryUrl}/tree/main/`,
+        },
+        blog: false,
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  themeConfig: {
+    image: 'img/og.png',
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
+    navbar: {
+      title: 'Full-Stack Product Manager',
+      logo: {
+        alt: 'Full-Stack Product Manager',
+        src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Book',
+        },
+        {
+          href: repositoryUrl,
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} lib-port. Built with Docusaurus and GitHub Pages.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
+};
+
+export default config;
